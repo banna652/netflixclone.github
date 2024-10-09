@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.logo{
+    width: 700px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 25px 50px;
+    font-size: 50px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language-btn{
+    margin-right: 30px;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 18px 10px;
+}
+.language-btn img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-content h1{
+    font-size: 240px;
+    line-height: 300px;
+    font-weight: 1000;
+    max-width: 90%;
+}
+
+.header-content h2{
+    font-size: 60px;
+    line-height: 120px;
+    font-weight: 100;
+    max-width: -10px;
+}
+
+.header-content h3{
+    font-size: 60px;
+    line-height: 120px;
+    font-weight: 500;
+    max-width: -10px;
+}
+
+.email-signup{
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.email-signup input{
+    background-color: #5857573a;
+    width: 95%;
+    height: 190px;
+    flex: 1;
+    border-radius: 12px;
+    border: 1px solid #b9b9b9;
+    outline: 0;
+    color: #fff;
+    font-size: 70px;
+    margin-left: 20px;
+    padding: 30px;
+}
+#text {
+    width: 70%;
+}
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 60px;
+    cursor: pointer;
+    padding: 60px 120px;
+}
+
+.under-box {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: absolute;
+    height: 20.25rem;
+    z-index: 1;
+}
+
+.under-top-box {
+    width: 200%;
+    left: -50%;
+}
+
+.under-top-box {
+    box-sizing: border-box;
+    position: absolute;
+    height: 150%;
+    top: 0;
+    margin-top: 65%;
+    display: flex;
+    align-items: center;
+    border: solid -1.25rem transparent;
+    border-top-left-radius: 300% 40%;
+    border-top-right-radius: 300% 40%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+.under-top-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.95rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgb(141, 12, 4), rgba(229, 9, 20, 1), rgb(141, 12, 40), rgba(33, 13, 22, 1) 84%);
+}
+
+.header-trend{
+    position: absolute;
+    top: 90%;
+    left: 18.3%;
+    z-index: 0;
+    transform: translate(-170%,-10%);
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+.header-trend h1{
+    font-size: 100px;
+    font-weight: 100;
+    max-width: 100%;
+    
+}
+
+.footer-navbar{
+    margin-top: -80px;
+}
+
+.country-btn{
+    margin-left: 15%;
+    margin-right: 90px;
+    font-size: 60px;
+    background: rgba(128, 128, 128, 0.075);
+    border: .1px solid #8d8c8c65;
+    border-radius: 15px;
+    padding: 40px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.country-btn img{
+    width: 30px;
+    margin-left: 90px;
+}
+.movies-btn{
+    font-size: 60px;
+    background: rgba(128, 128, 128, 0.075);
+    border: .1px solid #8d8c8c65;
+    border-radius: 15px;
+    padding: 40px  50px;
+    display: flex;
+    align-items: center;
+}
+
+.movies-btn img{
+    width: 30px;
+    margin-left: 150px;
+}
+
+.picture{
+    scrollbar-width: none;
+    overflow-x: scroll;
+    display: flex;
+    width: 410%;
+    height: 220%;
+    position: absolute;
+    z-index: 3;
+    transform: translate(15rem);
+    bottom: -240%;
+    padding: 0;
+    margin: 0;
+}
+
+.picture img{
+    border-radius: 40px;
+    margin-right: 170px;
+}
+
+.header-content-2{
+    position: absolute;
+    top: 120%;
+    left: 29%;
+    z-index: 0;
+    transform: translate(-160%,-10%);
+    margin-top: 29%;
+    margin-left: 17%;
+}
+
+.header-content-2 h1{
+    font-size: 100px;
+    font-weight: 100;
+    max-width: 100%;
+}
+
+.header-content-2 img{
+    display: flex;
+    width: 380%;
+    margin-left: -10%;
+}
+
+.header-content-3{
+    top: 120%;
+    z-index: 0;
+    transform: translate(-30px,-10%);
+    margin-top: 73%;
+    margin-left: 690px;
+}
+
+.header-content-3 h1{
+    font-size: 100px;
+    font-weight: 100;
+    max-width: 100%;
+}
+
+.netflix-qa{
+    margin: 60px auto;
+    width: 108%;
+    padding: 500px;
+    margin-left: -500px;
+    margin-top: -10%;
+}
+
+.netflix-qa li{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.netflix-qa li label{
+    align-items: center;
+    display: flex;
+    padding: 110px;
+    font-size: 108px;
+    background: #303030;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 150px;
+    position: absolute;
+    right: 70px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.netflix-qa li label:hover{
+    background: #424141;
+}
+
+.header-content-3 .email-signup{
+    max-width: 60%;
+    margin-left: 750PX;
+    margin-top: -100px;
+}
+
+.header4 small{
+    font-size: 60px;
+    margin-left: 23%;
+    position: absolute;
+    top: 90%;
+}
+
+.footer{
+    padding: 50px;
+    border-top: 6px solid #070707;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 75px;
+    font-weight: 400;
+    margin-bottom: 200px;
+    margin-left: 12%;
+}
+
+.row a{
+    color: #918e8e;
+    margin-bottom: 10%;
+}
+
+.row{
+    display: flex;
+}
+
+.footer .col{
+    display: flex;
+    flex-direction: column;
+    font-size: 65px;
+    margin-left: 12%;
+}
+
+.footer .col-2{
+    display: flex;
+    flex-direction: column;
+    font-size: 65px;
+    margin-left: 12%;
+}
+
+.footer .col-3{
+    display: flex;
+    flex-direction: column;
+    font-size: 65px;
+    margin-left: 12%;
+}
+
+.footer .col-4{
+    display: flex;
+    flex-direction: column;
+    font-size: 65px;
+    margin-left: 12%;
+}
+
+.language-btn-3{
+    margin-left: 13%;
+    display: inline-flex;
+    align-items: center;
+    background: #3f3e3e3a;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding: 28px 120px;
+    font-size: 60px;
+    color: #fff;
+}
+
+.language-btn-3 img{
+    width: 80%;
+    margin-left: 40%;
+}
+
+.tex{
+    padding: 250px;
+    border-top: 6px solid #070707;
+    color: #777;
+}
+
+.tex h2{
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 450px;
+}
